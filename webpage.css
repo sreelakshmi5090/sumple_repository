@@ -1,0 +1,262 @@
+body {
+    background-color: #003e7e;
+    color: white;
+    font-family: Arial, sans-serif;
+
+}
+/* .navbar {
+    background-color: #0056b3;
+} */
+.navbar a {
+    color: white !important;
+}
+.hero {
+    background: linear-gradient(rgba(0, 62, 126, 0.85), rgba(0, 62, 126, 0.85)), url('student name.avif') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background-color: #0066cc;
+    border: none;
+}
+/* .features {
+    margin-top: -100px;
+    background-color: white;
+    padding: 40px 0;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.feature-box {
+    text-align: center;
+    padding: 20px;
+}
+.feature-box i {
+    font-size: 2rem;
+    color: #0066cc;
+    margin-bottom: 15px;
+} */
+.features {
+margin-top: -100px;
+background-color: white;
+padding: 40px 0;
+color: black;
+}
+
+.feature-box {
+text-align: center;
+padding: 50px;
+background: #ffffff;
+border: 1px solid #ddd;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.feature-box i {
+font-size: 2rem;
+color: #0066cc;
+margin-bottom: 15px;
+}
+
+.feature-box h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.feature-box p {
+font-size: 1rem;
+color: #666666;
+}
+.icon{
+width: 32px;
+}
+
+
+
+/* second page */
+.features2 {
+margin-top: 50px;
+background-color: #f8f9fa; /* Light grey background */
+padding: 60px 0;
+color: #333;
+text-align: center;
+} 
+
+.section-heading2 {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 30px;
+color: #090909; /* Match the branding color */
+} 
+
+.feature2-box {
+text-align: center;
+padding: 20px;
+background: #ffffff;
+border: 1px solid #ddd;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+margin-bottom: 20px;
+transition: transform 0.3s ease-in-out;
+} 
+
+.feature2-box img {
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 8px;
+} 
+
+.feature2-box h3 {
+font-size: 1.5rem;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.feature2-box p {
+font-size: 1rem;
+color: #666;
+margin-bottom: 15px;
+}
+
+.feature2-box:hover {
+transform: scale(1.05); 
+} 
+
+/* Styling for the See More button */
+.btn-see-more {
+background-color: #0066cc;
+border: none;
+color: white;
+padding: 10px 20px;
+font-size: 1rem;
+border-radius: 4px;
+text-decoration: none;
+transition: background-color 0.3s ease-in-out;
+}
+
+.btn-see-more:hover {
+background-color: #005bb5;
+color: white;
+text-decoration: none;
+} 
+
+/* third section */
+
+.hero-section {
+    text-align: center;
+    padding: 90px 20px;
+    justify-content: center;
+}
+.hero_para{
+    padding-left: 20%;
+    margin-left: 50%;
+}
+.hero-section img {
+    border-radius: 50%;
+    width: 300px;
+    height: 296px;
+    /* margin-left: 230px;
+    margin-top: 100px;
+*/
+}
+.features-card {
+    background: #f8f9fa;
+    border: none;
+    /* box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 300px;
+    /* margin-top: 10%;
+    margin-left: 25%;
+    */
+}
+.logo{
+    width: 10%;
+}
+
+.small-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+.students-section {
+    /* background-color: #f8f9fa; */
+    padding: 30px 20px;
+  
+    
+}
+.student-card {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-radius: 10px;
+}
+.student-card .card-body {
+    padding: 20px;
+}
+/* .cta-section {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.cta-section button {
+    background-color: white;
+    color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+} */
+.cta-section {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.cta-section button {
+    background-color: white;
+    color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    width: 100%;
+    
+}
+
+
+
+
