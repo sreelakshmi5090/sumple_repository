@@ -3,9 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LearnDash Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(to bottom, #0056b3, #007bff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+        .course-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .course-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .badge.paid {
+            background-color: #007bff;
+        }
+        .card-body {
+            padding: 15px;
+        }
+
+        /* second page */
+        .testimonials-section {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+        .testimonials-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .testimonial-card {
+            background-color: white;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        .testimonial-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .testimonial-card .author-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .testimonial-card .author-info .author-details {
+            font-size: 0.9rem;
+        }
+        .testimonial-card .author-info .author-details strong {
+            display: block;
+            font-size: 1rem;
+        }
+
+        /* footer */
+
+        .cta-section {
+            background-color: #1261A0; /* Blue background */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .cta-section p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #1261A0;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f1f1f1;
+            color: #0d4c8c;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0d4c8c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-section p {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+   
+    </style>
 </head>
 <body>
-    
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">LearnDash Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">All Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>All Courses</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section class="my-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Course 1 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <div class="position-relative">
+                        <img src="social media marketing.avif" alt="Course Image">
+                        <span class="badge">Free</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Marketing</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque porta.</p>
+                        <a href="#" class="btn btn-primary">See more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <div class="position-relative">
+                        <img src="email marketing.jpg" alt="Course Image">
+                        <span class="badge">Free</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Email Marketing Strategies</h5>
+                        <p class="card-text">In porttitor ipsum eu justo condimentum euismod ullamcorper viverra.</p>
+                        <a href="#" class="btn btn-primary">See more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <div class="position-relative">
+                        <img src="content marketing.avif" alt="Course Image">
+                        <span class="badge paid">$1.00</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Content Marketing</h5>
+                        <p class="card-text">Repellat perspiciatis cum! Doloremque ea viverra eu doloremque.</p>
+                        <a href="#" class="btn btn-primary">See more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- second -->
+
+
+ <!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2>What Our Students Have to Say</h2>
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="author-info">
+                        <img src="business man.avif" alt="Author Image">
+                        <div class="author-details">
+                            <strong>Kelvin Black</strong>
+                            From Dallas, USA
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="author-info">
+                        <img src="portrait-business-woman-with-enthusiastic-face-expression-smiling-looking-confident-standing-s_1258-88087.avif" alt="Author Image">
+                        <div class="author-details">
+                            <strong>Zasha Swan</strong>
+                            From Australia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="author-info">
+                        <img src="istockphoto-1437816897-612x612.jpg" alt="Author Image">
+                        <div class="author-details">
+                            <strong>Frank Jones</strong>
+                            From Japan
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="col-md-6">
+                <div class="card testimonial-card">
+                    <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <div class="author-info">
+                        <img src="business man.webp" alt="Author Image">
+                        <div class="author-details">
+                            <strong>Jack Brown</strong>
+                            From London, UK
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta-section">
+    <h2>Join Our 7452 Happy Students Today!</h2>
+    <p>Enter description text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    <a href="#" class="cta-button">Start Learning</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    Copyright © 2024 LearnDash Academy
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
